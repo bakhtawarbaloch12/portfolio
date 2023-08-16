@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakhtawar Shabbir - Web Developer & Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- animate -->
+		<link rel="stylesheet" href="animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- fullpage --><!-- custom -->
+		<link rel="stylesheet" href="templatemo-style.css">
+    <style>
+
+        body {
+            background-color: rgb(244, 239, 239);
+            color: rgb(143, 142, 142);
+            font-family: 'Arial', sans-serif;
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: black;
+        }
+        .navbar-brand {
+            color: white;
+            font-size: 24px;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: red;
+        }
+        /* Header styles */
+       .header {
+            background-color: black;
+            background-size: contain;
+          
+        
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(250, 249, 249);
+            text-align: center;
+            padding: 150px 0;
+        }
+        .header-title {
+            font-size: 2.5rem;
+            margin-bottom: 1px;
+            padding-top: 10%;
+         
+        }
+          @media (max-width: 768px) {
+            /* ... (rest of the media query styles remain the same) ... */
+        }
+        .header-subtitle {
+            font-size: 1.5rem;
+            padding-bottom: 10%;
+            
+        }
+        /* Main Content styles */
+        .content {
+            background-color: black;
+            padding: 50px 0;
+        }
+        .content h2 {
+            color: white;
+        }
+        /* Footer styles */
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-email {
+            font-size: 18px;
+        }
+        .footer-whatsapp {
+            font-size: 18px;
+        }
+        .skill {
+            margin-bottom: 20px;
+        }
+        .skill-label {
+            font-weight: bold;
+        }
+        .project {
+            margin-bottom: 30px;
+            text-align: center; /* Center align the content within each project column */
+            position: relative;
+        }
+
+        .project img {
+            width: 270px; /* Set the desired width for the images */
+            height: 400px; /* Set the desired height for the images */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+            transition: transform 0.3s ease-in-out; /* Add a transition effect for the hover effect */
+        }
+
+        .project:hover img {
+            transform: scale(1.1); /* Enlarge the image on hover */
+        }
+
+        .progress {
+            width: 100%;
+            height: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            overflow: hidden;
+            transition: width 0.3s ease-in-out; /* Add a transition effect for the hover effect */
+        }
+
+        .progress .progress-bar {
+            transition: width 0.3s ease-in-out; /* Add a transition effect for the hover effect */
+        }
+
+        .project:hover .progress .progress-bar {
+            width: 100%; /* Fill the progress bar on hover */
+      
+        }
+
+        .project h4 {
+            margin-top: 10px;
+        }
+        .contact-section {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ff2b58;
+        }
+        header, footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 100%;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Contact Information styles */
+        .contact-info {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+        #work
+    {
+        background:black;
+    }
+#work h2
+    {
+        text-align: center;
+    }
+
+#work .media
+    {
+      margin-top: 30px;
+    }
+	
+#work .media .fa
+    {
+        border: 2px solid white;
+        border-radius: 50%;
+        color: #D43F52;
+        font-size: 24px;
+        margin-right: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.4s ease-in;
+    }
+#work .media .fa:hover
+    {
+        background: white;
+        cursor: pointer;
+    }
+#work .media .media-heading
+    {
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+/* end work */
+
+        .contact-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ff2b58;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            /* Reset header and footer styles for mobile */
+            header, footer {
+                padding: 10px 0;
+            }
+
+            /* Reset header styles for mobile */
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            /* Reset navigation styles for mobile */
+            nav {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            /* Adjust the width of the logo for mobile */
+            #logo {
+                max-width: 70%;
+            }
+
+            /* Adjust font size for mobile */
+            h1 {
+                font-size: 24px;
+            }
+
+            /* Adjust contact information styles for mobile */
+            .contact-info {
+                font-size: 14px;
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+            .contact-info h3 {
+                font-size: 18px;
+            }
+
+            .contact-info li {
+                margin-bottom: 5px;
+            }
+        }
+        #portfolio
+        {
+            background: black;
+            text-align: center;
+        }
+    #portfolio h2
+        {
+            padding-bottom: 30px;
+        }
+    #portfolio .portfolio-thumb
+        {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+    #portfolio .portfolio-thumb .portfolio-overlay
+        {
+            background:rgb(24, 24, 24);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding-top: 60px;
+            transition: all 0.4s ease-in-out;
+        }
+        .img-responsive
+        {
+            height: 350px;
+            width: auto;
+        
+        }
+    #portfolio .portfolio-thumb:hover .portfolio-overlay
+        {
+            cursor: pointer;
+            opacity: 0.8;
+            transform: scale(0.9);
+        }
+        .button1 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .button:hover {
+            background-color: #2980b9;
+          }
+          .section1{
+            background-color: black;
+          }
+          .aboutimg{
+            padding-left: 10%;
+            width: 120%;
+            height: 370px;
+          }
+    /* end portfolio */
+        
+       
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="logo-removebg-preview.png" alt="Logo" width="140" height="110">
+       
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>
+    <!-- Header -->
+    <header class="headerimg" id="home" style="background-image: url(download.jpeg);  background-repeat:no-repeat">
+        <div class="container">
+            <h2 class="header-title">Bakhtawar Shabbir</h2>
+            <h3 class="header-subtitle"></h3>
+        </div>
+    </header>
+    <br>
+    <div id="about" class="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+                    <br>
+                    <h2>ABOUT ME</h2>
+                    <h4>DESIGNER &AMP; DEVELOPER</h4>
+                    <p>Welcome to my corner of the web! I'm a passionate web designer and developer, dedicated to crafting captivating online experiences. Through a blend of meticulous coding and artistic flair, I bring ideas to life in the digital realm.</p>
+                    <p>With a keen eye for detail, I specialize in translating concepts into clean, semantic HTML and CSS. Every line of code I write is aimed at creating responsive and visually stunning websites that resonate with both users and search engines.
+                        <p>From elegant typography to seamless animations, my designs are a testament to the power of CSS in enhancing user engagement. Let's collaborate to transform your vision into a pixel-perfect reality that leaves a lasting impression. Explore my portfolio and let's embark on a journey to redefine web aesthetics and functionality together.</p>
+                    </p>
+                </div>
+                <br>
+                <div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+                    <br>
+            <img class="aboutimg" src="download1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    
+    <div id="work" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounce">
+                    <br>
+                    <h2>WHAT I DO</h2>
+                </div>
+            </div>  
+            
+            <div class="row">
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Responsive Website</h3>
+                            <p>I excel in developing responsive designs that adapt flawlessly across various devices and screen sizes. Let's ensure your content looks and functions seamlessly, no matter the platform.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-link"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Front & Back End</h3>
+                            <p>I specialize in front-end development, crafting interactive interfaces that users love to engage with. Additionally, I am skilled in back-end programming, ensuring your application runs efficiently and securely behind the scenes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-paper-plane"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">UI &AMP; UX Design</h3>
+                            <p>I specialize in creating user-centric UI/UX designs that combine aesthetics with seamless functionality. Let's collaborate to elevate your product's visual appeal and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- Main Content (Skills, Projects, Contact Info, About, Home) --
+    <section class="content">
+        <div class="container text-center">
+            <h2>About</h2>
+            dd your about section here -->
+       <br> </div>
+    </section><section  id="skills"class="content">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <div class="skill-label">JavaScript</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">PHP</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </div>
+                        <!-- Add more skills here -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill">
+                            <div class="skill-label">HTML5</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-label">Bootstrap</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                        </div>
+                        <!-- Add more skills here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <section id="projects" class="content">
+        <div id="portfolio" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow bounce">Projects</h2>
+                    </div>
+                    <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="Capture.PNG" class="img-responsive" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                    <h4>JavaScript Calculator</h4>
+                                    <a href="https://bakhtawarbaloch12.github.io/calculator/"><button class="button1">View Now</button></a>
+                                   
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="Capture2.PNG" class="img-responsive" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                    <h4>Signup Form</h4>
+                                    <a href="https://bakhtawarbaloch12.github.io/mysignupform/"><button class="button1">View Now</button></a>
+                                   
+                           
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="Capture3.PNG" class="img-responsive" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                    <h4>Cosmetics Website</h4>
+                                    <a href="https://bakhtawarbaloch12.github.io/brcosmetics/bcosmteics.html"><button class="button1">View Now</button></a>
+                                   
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="capture1.PNG" class="img-responsive" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                    <h4>Cinema Website</h4>
+                                    <a href="https://bakhtawarbaloch12.github.io/cinemawebsite/"><button class="button1">View Now</button></a>
+                                   
+                           
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="Capture4.PNG" class="img-responsive" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                    <h4>JavaScript Calculator </h4>
+                                    <a href="https://bakhtawarbaloch12.github.io/eproject/home.html"><button class="button1">View Now</button></a>
+                                   
+                           
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <section id="contact" class="content">
+        <div class="container text-center">
+            <section class="contact-section">
+                <h3>Contact Information</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:shabbirbakhtawar6@gmail.com">shabbirbakhtawar6@gmail.com</a></li>
+                    <li><i class="fab fa-fiverr"></i> Fiverr: <a href="https://www.fiverr.com/s/3L3k6V" target="_blank">https://www.fiverr.com/s/3L3k6V</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/bakhtawar-shabbir-809a6b185/">//www.linkedin.com/in/bakhtawar-shabbir-809a6b185/</a></li>
+                    <li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="tel:+923341156589">+92 333 41156589</a></li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Footer -->
+    <footer class="footer">
+       
+    </footer>
+<script> 
+    // Typing effect for the header title
+    const headerTitle = document.querySelector(".header-subtitle");
+    const headerTitleText = "Web Developer & Designer";
+    let i = 0;
+
+    function type() {
+        if (i < headerTitleText.length) {
+            headerTitle.innerHTML += headerTitleText.charAt(i);
+            i++;
+            setTimeout(type, 150); // Adjust typing speed here
+        }
+    }
+
+    type();
+</script>
+    <!-- Bootstrap and JavaScript libraries -->
+    <!-- jQuery -->
+		<script src="jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
